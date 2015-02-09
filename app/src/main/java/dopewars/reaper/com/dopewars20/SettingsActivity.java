@@ -1,15 +1,10 @@
 package dopewars.reaper.com.dopewars20;
 
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
-import android.preference.RingtonePreference;
-import android.text.TextUtils;
 
 /**
  * A {@link android.preference.PreferenceActivity} that presents a set of application settings. On
@@ -58,32 +53,10 @@ public class SettingsActivity extends PreferenceFragment {
                                 ? listPreference.getEntries()[index]
                                 : null);
 
-            } else if (preference instanceof RingtonePreference) {
-                // For ringtone preferences, look up the correct display value
-                // using RingtoneManager.
-                if (TextUtils.isEmpty(stringValue)) {
-                    // Empty values correspond to 'silent' (no ringtone).
-                    preference.setSummary(R.string.pref_ringtone_silent);
-
-                } else {
-                    Ringtone ringtone = RingtoneManager.getRingtone(
-                            preference.getContext(), Uri.parse(stringValue));
-
-                    if (ringtone == null) {
-                        // Clear the summary if there was a lookup error.
-                        preference.setSummary(null);
-                    } else {
-                        // Set the summary to reflect the new ringtone display
-                        // name.
-                        String name = ringtone.getTitle(preference.getContext());
-                        preference.setSummary(name);
-                    }
-                }
-
             } else {
                 // For all other preferences, set the summary to the value's
                 // simple string representation.
-                preference.setSummary(stringValue);
+                preference.setSummary(stringValue.trim());
             }
             return true;
         }
