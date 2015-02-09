@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DopeWars</string>
+    <string name="welcome">Where to, dude?</string>
+    <string name="settings_title">Settings</string>
+    <string name="highscores">Highscores</string>
+    <string name="Neighborhood_1">Bronx</string>
+    <string name="Neighborhood_2">Ghetto</string>
+    <string name="Neighborhood_3">Central Park</string>
+    <string name="Neighborhood_4">Manhattan</string>
+    <string name="Neighborhood_5">Coney Island</string>
+    <string name="Neighborhood_6">Brooklyn</string>
+
+</resources>

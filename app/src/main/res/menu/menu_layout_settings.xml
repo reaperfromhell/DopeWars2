@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="dopewars.reaper.com.dopewars20.ShowSettings">
+    <item android:id="@+id/settings_title" android:title="@string/settings_title"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
