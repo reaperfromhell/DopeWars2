@@ -4,6 +4,7 @@
     <string name="app_name">DopeWars</string>
     <string name="welcome">¿Pa onde, tío?</string>
     <string name="settings_title">Definiones</string>
+    <string name="highscores">Highscores</string>
     <string name="Neighborhood_1">Madrid</string>
     <string name="Neighborhood_2">Barcelona</string>
     <string name="Neighborhood_3">Sevilla</string>

@@ -26,7 +26,6 @@
         </activity>
         <activity
             android:name=".Neighborhood"
-            android:label="@string/title_activity_neighborhood"
             android:parentActivityName=".Jet">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

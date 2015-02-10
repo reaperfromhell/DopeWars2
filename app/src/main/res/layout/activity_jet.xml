@@ -35,8 +35,6 @@
             android:text="@string/Neighborhood_1"
             android:id="@+id/btNH1"
             android:width="200dp"
-            android:layout_above="@+id/btNH2"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:onClick="goNeighborhood" />
 
@@ -46,9 +44,6 @@
             android:text="@string/Neighborhood_2"
             android:id="@+id/btNH2"
             android:width="200dp"
-            android:layout_above="@+id/btNH3"
-            android:layout_alignLeft="@+id/btNH3"
-            android:layout_alignStart="@+id/btNH3"
             android:layout_marginTop="10dp"
             android:onClick="goNeighborhood" />
 
@@ -58,9 +53,6 @@
             android:text="@string/Neighborhood_3"
             android:id="@+id/btNH3"
             android:width="200dp"
-            android:layout_above="@+id/btNH4"
-            android:layout_alignLeft="@+id/btNH4"
-            android:layout_alignStart="@+id/btNH4"
             android:layout_marginTop="10dp"
             android:onClick="goNeighborhood" />
 
@@ -70,9 +62,6 @@
             android:text="@string/Neighborhood_4"
             android:id="@+id/btNH4"
             android:width="200dp"
-            android:layout_above="@+id/btNH5"
-            android:layout_alignLeft="@+id/btNH5"
-            android:layout_alignStart="@+id/btNH5"
             android:layout_marginTop="10dp"
             android:onClick="goNeighborhood" />
 
@@ -82,9 +71,6 @@
             android:text="@string/Neighborhood_5"
             android:id="@+id/btNH5"
             android:width="200dp"
-            android:layout_above="@+id/btNH6"
-            android:layout_alignLeft="@+id/btNH6"
-            android:layout_alignStart="@+id/btNH6"
             android:layout_marginTop="10dp"
             android:onClick="goNeighborhood" />
 
@@ -94,8 +80,6 @@
             android:text="@string/Neighborhood_6"
             android:id="@+id/btNH6"
             android:width="200dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:onClick="goNeighborhood" />
     </LinearLayout>
