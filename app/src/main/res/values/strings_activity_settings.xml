@@ -1,7 +1,5 @@
 <resources>
-    <string name="title_activity_settings">Settings</string>
-
     <string name="pref_username_text">Username</string>
     <string name="pref_username">John Doe</string>
-
+    <string name="version_text">Version</string>
 </resources>

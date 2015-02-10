@@ -1,84 +1,103 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Jet">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Jet">
 
-    <TextView android:text="@string/welcome" android:layout_width="wrap_content"
+    <TextView
+        android:text="@string/welcome"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/darker_gray"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:textIsSelectable="false"
         android:textSize="20sp"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Neighborhood_1"
-        android:id="@+id/btNH1"
-        android:width="200dp"
-        android:layout_above="@+id/btNH2"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Neighborhood_2"
-        android:id="@+id/btNH2"
-        android:width="200dp"
-        android:layout_above="@+id/btNH3"
-        android:layout_alignLeft="@+id/btNH3"
-        android:layout_alignStart="@+id/btNH3"
-        android:layout_marginTop="10dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Neighborhood_1"
+            android:id="@+id/btNH1"
+            android:width="200dp"
+            android:layout_above="@+id/btNH2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="goNeighborhood" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Neighborhood_3"
-        android:id="@+id/btNH3"
-        android:width="200dp"
-        android:layout_above="@+id/btNH4"
-        android:layout_alignLeft="@+id/btNH4"
-        android:layout_alignStart="@+id/btNH4"
-        android:layout_marginTop="10dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Neighborhood_2"
+            android:id="@+id/btNH2"
+            android:width="200dp"
+            android:layout_above="@+id/btNH3"
+            android:layout_alignLeft="@+id/btNH3"
+            android:layout_alignStart="@+id/btNH3"
+            android:layout_marginTop="10dp"
+            android:onClick="goNeighborhood" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Neighborhood_4"
-        android:id="@+id/btNH4"
-        android:width="200dp"
-        android:layout_above="@+id/btNH5"
-        android:layout_alignLeft="@+id/btNH5"
-        android:layout_alignStart="@+id/btNH5"
-        android:layout_marginTop="10dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Neighborhood_3"
+            android:id="@+id/btNH3"
+            android:width="200dp"
+            android:layout_above="@+id/btNH4"
+            android:layout_alignLeft="@+id/btNH4"
+            android:layout_alignStart="@+id/btNH4"
+            android:layout_marginTop="10dp"
+            android:onClick="goNeighborhood" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Neighborhood_5"
-        android:id="@+id/btNH5"
-        android:width="200dp"
-        android:layout_above="@+id/btNH6"
-        android:layout_alignLeft="@+id/btNH6"
-        android:layout_alignStart="@+id/btNH6"
-        android:layout_marginTop="10dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Neighborhood_4"
+            android:id="@+id/btNH4"
+            android:width="200dp"
+            android:layout_above="@+id/btNH5"
+            android:layout_alignLeft="@+id/btNH5"
+            android:layout_alignStart="@+id/btNH5"
+            android:layout_marginTop="10dp"
+            android:onClick="goNeighborhood" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Neighborhood_6"
-        android:id="@+id/btNH6"
-        android:width="200dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp"
-        android:layout_marginTop="10dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Neighborhood_5"
+            android:id="@+id/btNH5"
+            android:width="200dp"
+            android:layout_above="@+id/btNH6"
+            android:layout_alignLeft="@+id/btNH6"
+            android:layout_alignStart="@+id/btNH6"
+            android:layout_marginTop="10dp"
+            android:onClick="goNeighborhood" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Neighborhood_6"
+            android:id="@+id/btNH6"
+            android:width="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="goNeighborhood" />
+    </LinearLayout>
 
 </RelativeLayout>

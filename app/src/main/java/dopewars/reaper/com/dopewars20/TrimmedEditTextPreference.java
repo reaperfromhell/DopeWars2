@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 /**
  * Class that extends EditTextPreference to trim the values passed to it.
  */
-public class TrimmedEditTextPreference extends EditTextPreference{
+class TrimmedEditTextPreference extends EditTextPreference {
 
     @TargetApi(21)
     public TrimmedEditTextPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
@@ -31,7 +31,7 @@ public class TrimmedEditTextPreference extends EditTextPreference{
     }
 
     @Override
-    public void setText(String text){
+    public void setText(String text) {
         super.setText(text.trim());
     }
 }

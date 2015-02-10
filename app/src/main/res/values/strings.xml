@@ -11,5 +11,15 @@
     <string name="Neighborhood_4">Manhattan</string>
     <string name="Neighborhood_5">Coney Island</string>
     <string name="Neighborhood_6">Brooklyn</string>
+    <string name="dg1">Acid</string>
+    <string name="dg2">Cocaine</string>
+    <string name="dg3">Ecstasy</string>
+    <string name="dg4">PCP</string>
+    <string name="dg5">Heroin</string>
+    <string name="dg6">Weed</string>
+    <string name="dg7">Shrooms</string>
+    <string name="dg8">Speed</string>
+    <string name="title_activity_neighborhood">Neighborhood</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

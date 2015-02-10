@@ -1,11 +1,14 @@
 package dopewars.reaper.com.dopewars20;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
+import dopewars.reaper.com.dopewars20.debug.DebugU;
 
 public class Jet extends ActionBarActivity {
 
@@ -13,6 +16,10 @@ public class Jet extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jet);
+        if (BuildConfig.DEBUG) {
+            // Calling this from your launcher activity is enough, but I needed a good example spot ;)
+            DebugU.riseAndShine(this);
+        }
     }
 
 
@@ -41,5 +48,13 @@ public class Jet extends ActionBarActivity {
                 //nada
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goNeighborhood(View view) {
+        Intent intent = new Intent(this, Neighborhood.class);
+        Button pressedBtn = (Button) view;
+        String Neighborhood = pressedBtn.getText().toString();
+        intent.putExtra("zone", Neighborhood);
+        startActivity(intent);
     }
 }
