@@ -17,4 +17,10 @@ public class ShowSettings extends ActionBarActivity {
                 .replace(android.R.id.content, new SettingsActivity()).commit();
     }
 
+    /*@Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        // refresh your views here
+        super.onConfigurationChanged(newConfig);
+    }*/
+
 }

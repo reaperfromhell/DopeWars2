@@ -10,6 +10,12 @@
         android:capitalize="words"
         android:singleLine="true"
         android:maxLines="1" />
+    <ListPreference
+        android:key="language_preference"
+        android:title="Language"
+        android:defaultValue=""
+        android:entries="@array/Language"
+        android:entryValues="@array/languageAlias"/>
     <Preference
         android:key="version"
         android:title="@string/version_text" />

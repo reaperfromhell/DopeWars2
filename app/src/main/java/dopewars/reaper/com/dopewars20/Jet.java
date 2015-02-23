@@ -1,25 +1,45 @@
 package dopewars.reaper.com.dopewars20;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Locale;
+
 import dopewars.reaper.com.dopewars20.debug.DebugU;
 
 public class Jet extends ActionBarActivity {
 
+   // public static String sDefSystemLanguage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jet);
+     //   sDefSystemLanguage = Locale.getDefault().getLanguage();
+        //setContentView(R.layout.activity_jet);
         if (BuildConfig.DEBUG) {
             // Calling this from your launcher activity is enough, but I needed a good example spot ;)
             DebugU.riseAndShine(this);
         }
+        String languageToLoad = PreferenceManager.getDefaultSharedPreferences(getBaseContext()).getString("language_preference","");
+        Locale locale;
+        if(languageToLoad.equals("")){
+            locale = Resources.getSystem().getConfiguration().locale;
+        }else {
+            locale = new Locale(languageToLoad);
+        }
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        this.setContentView(R.layout.activity_jet);
     }
 
 
@@ -49,6 +69,12 @@ public class Jet extends ActionBarActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    /*@Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        // refresh your views here
+        super.onConfigurationChanged(newConfig);
+    }*/
 
     public void goNeighborhood(View view) {
         Intent intent = new Intent(this, Neighborhood.class);

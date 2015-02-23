@@ -30,8 +30,15 @@ public class SettingsActivity extends PreferenceFragment {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.pref_general);
         bindPreferenceSummaryToValue(findPreference("username"));
+        bindPreferenceSummaryToValue(findPreference("language_preference"));
         findPreference("version").setSummary(BuildConfig.VERSION_NAME);
     }
+
+    /*@Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        // refresh your views here
+        super.onConfigurationChanged(newConfig);
+    }*/
 
     /**
      * A preference value change listener that updates the preference's summary
@@ -62,6 +69,7 @@ public class SettingsActivity extends PreferenceFragment {
             return true;
         }
     };
+
 
     /**
      * Binds a preference's summary to its value. More specifically, when the

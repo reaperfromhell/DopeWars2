@@ -11,13 +11,13 @@
     <string name="Neighborhood_4">Mouraria</string>
     <string name="Neighborhood_5">Horta Nova</string>
     <string name="Neighborhood_6">Alto do Pina</string>
-    <string name="dg1">Ácido</string>
-    <string name="dg2">Cocaina</string>
+    <string name="dg1">Ácidos</string>
+    <string name="dg2">Coca</string>
     <string name="dg3">Ecstasy</string>
     <string name="dg4">PCP</string>
     <string name="dg5">Heroina</string>
     <string name="dg6">Erva</string>
     <string name="dg7">Cogumelos</string>
-    <string name="dg8">Speed</string>
+    <string name="dg8">Anfetaminas</string>
 
 </resources>

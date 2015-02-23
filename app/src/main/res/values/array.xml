@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Language">
+        <item>System Default</item>
+        <item>English</item>
+        <item>Portuguese</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="languageAlias">
+        <!--suppress CheckTagEmptyBody -->
+        <item></item>
+        <item>en</item>
+        <item>pt</item>
+        <item>es</item>
+    </string-array>
+</resources>
